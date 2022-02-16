@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline: 1px solid red; */
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0093e9;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  color: #5c5c5c;
+}
+
+main {
+  margin: 50px 50px 0 50px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  outline: 1px;
+  padding-bottom: 5px;
+}
+
+.field {
+  margin: 25px;
+  /* outline: 1px solid red; */
+}
+
+.field label,
+.field span {
+  padding-left: 10px;
+  font-size: 1.1em; /* tamanho da fonte */
+  display: block;
+  width: 100%;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding-left: 10px;
+  height: 30px;
+  line-height: 30px; /* altura da linha */
+  border-radius: 15px; /* bordas arredondadas */
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+input#nao {
+  margin-left: 30px;
+}
+
+textarea {
+  line-height: 20px; /* altura da linha do texto */
+  padding: 10px; /* preenchimento interno */
+  height: 90px; /* altura da caixa de texto */
+  resize: none;
+}
+
+input[type="submit"] {
+  display: block;
+  /* background-color: #ccc; */
+  background-color: #00a0da;
+  height: 35px; /* altura do botão */
+  border: none; /* remove a borda padrão*/
+  outline: 0;
+  cursor: pointer;
+  width: 75px; /* largura do botão */
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 5px; /* borda arredondada */
+}
+
+@media screen and (min-width: 1000px) {
+  main {
+    margin: 50px auto;
+    width: 35%;
+  }
+}
