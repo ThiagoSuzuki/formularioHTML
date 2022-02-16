@@ -2,4 +2,5 @@
 
 Criação de formulário utilizando HTMl5 e CSS3.
 
-○ Página minimamente responsiva utilizando media queries
+- Página responsiva utilizando media queries
+
