@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,35 +9,38 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main>
-        <form method="post" action="/receber_dados.php">
+        <main>
+            <form method="post" action="/receber_dados.php">
+    
+                <h1>Contato</h1>
+    
+                <div class="field">
+                    <label for="firstName">Primeiro nome:</label>
+                    <input type="text" id="fname" placeholder="Nome">
+                </div>
+    
+                <div class="field">
+                    <label for="lname">Sobrenome:</label>
+                    <input type="text" id="lname" name="lname" placeholder="Sobrenome">
+                </div>
+    
+                <div class="field">
+                    <label for="telefone">Telefone:</label>
+                    <input type="text" id="phone" name="phone" pattern="" maxlength="11" placeholder="Telefone (00) 00000-0000">
+                </div>
+    
+                <div class="field">
+                    <label for="mensagem">Sua mensagem:</label>
+                    <textarea name="mensagem" id="mensagem" placeholder="Digite sua mensagem" required></textarea>
+                </div>
+    
+                <input type="submit" name="acao" value="Enviar">
+                
+            </form>
 
-            <h1>Contato</h1>
+        <footer>
+            <p>Desenvolvido por Thiago Suzuki.</p>
+        </footer>
 
-            <div class="field">
-                <label for="firstName">Primeiro nome:</label>
-                <input type="text" id="fname" placeholder="Nome">
-            </div>
-
-            <div class="field">
-                <label for="lname">Último nome:</label>
-                <input type="text" id="lname" name="lname" placeholder="Sobrenome">
-            </div>
-
-            <div class="field">
-                <label for="telefone">Telefone:</label>
-                <input type="text" id="telefone" name="telefone" placeholder="Telefone">
-            </div>
-
-            <div class="field">
-                <label for="mensagem">Sua mensagem:</label>
-                <textarea name="mensagem" id="mensagem" placeholder="Digite sua mensagem" required></textarea>
-            </div>
-
-            <input type="submit" name="acao" value="Enviar">
-            
-        </form>
-        
-</main>
 </body>
 </html>
