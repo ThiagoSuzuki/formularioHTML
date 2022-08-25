@@ -1,46 +1,56 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Thiago Suzuki">
+    <meta name="description" content="form, html, css">
+    
     <title>Formulário HTML | Básico</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-        <main>
-            <form method="post" action="/receber_dados.php">
-    
-                <h1>Contato</h1>
-    
-                <div class="field">
-                    <label for="firstName">Primeiro nome:</label>
+    <main>
+        <div class="left"></div>
+        <form method="post" action="">
+
+            <h1>Contato</h1>
+
+            <div class="field">
+                <label for="firstName">
                     <input type="text" id="fname" placeholder="Nome">
-                </div>
-    
-                <div class="field">
-                    <label for="lname">Sobrenome:</label>
+                </label>
+            </div>
+
+            <div class="field">
+                <label for="lname">
                     <input type="text" id="lname" name="lname" placeholder="Sobrenome">
-                </div>
-    
-                <div class="field">
-                    <label for="telefone">Telefone:</label>
-                    <input type="text" id="phone" name="phone" pattern="" maxlength="11" placeholder="Telefone (00) 00000-0000">
-                </div>
-    
-                <div class="field">
-                    <label for="mensagem">Sua mensagem:</label>
+                </label>
+            </div>
+
+            <div class="field">
+                <label for="email">
+                    <input type="text" id="email" name="email" placeholder="Email">
+                </label>
+            </div>
+
+            <div class="field">
+                <label for="mensagem">Sua mensagem:
                     <textarea name="mensagem" id="mensagem" placeholder="Digite sua mensagem" required></textarea>
-                </div>
-    
-                <input type="submit" name="acao" value="Enviar">
-                
-            </form>
+                </label>
+            </div>
 
-        <footer>
-            <p>Desenvolvido por Thiago Suzuki.</p>
-        </footer>
+            <input type="submit" name="acao" value="Enviar">
+        </form>
+    </main>
 
+    <footer>
+        <p>
+        2022 &#169; by
+        <a href="https://github.com/ThiagoSuzuki">Thiago Suzuki</a>
+        </p>
+    </footer>
 </body>
 </html>
