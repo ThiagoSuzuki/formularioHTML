@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Thiago Suzuki">
     <meta name="description" content="form, html, css">
-    
+
     <title>Formulário HTML | Básico</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <main>
         <div class="left"></div>
-        <form method="post" action="">
+        <form method="post">
 
             <h1>Contato</h1>
 
             <div class="field">
                 <label for="firstName">
-                    <input type="text" id="fname" placeholder="Nome">
+                    <input type="text" id="fname" placeholder="Nome" required>
                 </label>
             </div>
 
@@ -32,7 +34,7 @@
 
             <div class="field">
                 <label for="email">
-                    <input type="text" id="email" name="email" placeholder="Email">
+                    <input type="email" id="email" name="email" placeholder="Email" required>
                 </label>
             </div>
 
@@ -42,15 +44,17 @@
                 </label>
             </div>
 
-            <input type="submit" name="acao" value="Enviar">
+            <input type="submit" onsubmit="enviado()" name="acao" value="Enviar">
         </form>
     </main>
 
     <footer>
-        <p>
-        2022 &#169; by
-        <a href="https://github.com/ThiagoSuzuki">Thiago Suzuki</a>
+        <p>2023 &#169; by
+            <a href="https://github.com/ThiagoSuzuki">Thiago Suzuki</a>
         </p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
+
 </html>

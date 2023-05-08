@@ -44,7 +44,7 @@ main {
 }
 
 .left {
-  background-image: url('https://source.unsplash.com/random');
+  background-image: url('https://source.unsplash.com/random/?city,night');
   background-repeat: no-repeat;
   background-size: cover;
   border-top-left-radius: 5px;
