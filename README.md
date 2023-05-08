@@ -4,7 +4,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://thicodes-html-form.netlify.app/" color="white">
+    <a href="https://tsuzukidev-html-form.netlify.app/" color="white">
       Demo
     </a>
   </h3>
